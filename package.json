@@ -1,0 +1,20 @@
+{
+  "name": "querkraft.one",
+  "version": "1.0.0",
+  "description": "Web Server and Client for Querkraft.one",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev":"nodemon server/index.js"
+  },
+  "author": "Robin Walter",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
