@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div class="box" id="navbar">
     <div id="nav">
       <router-link to="/home">HOME</router-link>
       <router-link to="/querkraft">QUERKRAFT</router-link>
@@ -22,12 +22,12 @@ export default {
 };
 </script>
 
-<style scoped>
-#nav {
-  padding: 30px;
+<style>
+#navbar {
+  justify-content: end;
 }
 
-#nav a {
+/* #nav a {
   margin: 0px 10px;
   font-size: 1.5em;
   font-weight: bold;
@@ -37,5 +37,5 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #fe4438;
-}
+} */
 </style>

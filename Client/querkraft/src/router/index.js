@@ -9,6 +9,7 @@ function lazyLoad(view) {
 const routes = [
   {
     path: "/home",
+    alias: "",
     name: "Home",
     component: lazyLoad("Home"),
   },

@@ -5,10 +5,10 @@
       v-for="(promise, index) in promises"
       v-bind:key="promise"
     >
-      <h3 class="promise">
+      <h3 class="promise lean-grey">
         {{ promise }}
       </h3>
-      <div class="verticalLine" v-if="index < promises.length - 1"></div>
+      <div class="vertical-line" v-if="index < promises.length - 1"></div>
     </div>
   </div>
 </template>
@@ -19,12 +19,12 @@ export default {
   data: function () {
     return {
       promises: [
-        "24 h Erreichbarkeit",
         "Blended Learning",
-        "Präsenz und Remote",
+        "Masters of competence",
+        "Kernkraft-Befürworter",
+        "Company of the year 2022",
         "1A Stimmung",
         "Häppchen-Platten",
-        "Samba si - Arbeit no",
       ],
     };
   },
@@ -33,16 +33,10 @@ export default {
 
 <style>
 .qualPromBox {
-  background-color: #53555a;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-
-.verticalLine {
-  width: 2px;
-  height: 30%;
-  background-color: white;
+  justify-content: flex-start;
+  margin-bottom: 60px;
 }
 
 .promBox {
@@ -53,7 +47,6 @@ export default {
 
 .promise {
   padding: 0px 10px;
-  color: white;
   text-transform: uppercase;
 }
 </style>
