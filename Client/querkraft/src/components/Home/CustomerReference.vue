@@ -51,7 +51,7 @@ hr {
 
 h3 {
   margin: 0px 20px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 img {
@@ -64,7 +64,7 @@ img {
   }
 
   img {
-    width: 70%;
+    width: 50%;
     margin-bottom: 20px;
   }
 
@@ -73,7 +73,7 @@ img {
   }
 
   h3 {
-    font-size: 2em;
+    font-size: 2rem;
     margin-bottom: 20px;
   }
 }
