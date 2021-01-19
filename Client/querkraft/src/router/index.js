@@ -73,6 +73,18 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
+  scrollBehavior () {
+    let y;
+    if(window.innerWidth > 768) {
+      y = 108
+    }
+
+    else {
+      y = 0
+    }
+
+    return { x: 0, y: y }
+  }
 });
 
 export default router;

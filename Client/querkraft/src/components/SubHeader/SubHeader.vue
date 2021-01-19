@@ -8,10 +8,10 @@
         <div class="vertical-line"></div>
         <div class="lean-grey">Mediation</div>
       </div>
-      <div class="lean-grey" id="contact">+49 (0)2828 9019280</div>
+      <!-- <div class="lean-grey" id="contact">+49 (0)2828 9019280</div> -->
     </div>
     <div class="subheader-login">
-      <div class="login-button">Einloggen</div>
+      <div class="login-button">+49 (0) 2828 9019280</div>
     </div>
   </div>
 </template>
@@ -51,6 +51,7 @@ export default {
 }
 .sub-headline > * {
   margin-right: 10px;
+  font-size: 16px !important;
 }
 
 .subheader-login {
@@ -66,7 +67,7 @@ export default {
   font-family: "PT Serif", serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 16px;
   /* line-height: 27px;
   letter-spacing: 0.375px; */
   color: #ffffff;
@@ -78,5 +79,13 @@ export default {
 
 #contact {
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) { 
+
+.subheader-container {
+  display: none;
+}
+
 }
 </style>

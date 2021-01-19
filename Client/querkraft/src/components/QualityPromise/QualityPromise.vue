@@ -22,9 +22,6 @@ export default {
         "Blended Learning",
         "Masters of competence",
         "Kernkraft-Befürworter",
-        "Company of the year 2022",
-        "1A Stimmung",
-        "Häppchen-Platten",
       ],
     };
   },
@@ -33,10 +30,13 @@ export default {
 
 <style>
 .qualPromBox {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
+  z-index: 3;
+  background-color:white;
 }
 
 .promBox {
@@ -47,6 +47,13 @@ export default {
 
 .promise {
   padding: 0px 10px;
-  text-transform: uppercase;
+  font-size: 14px !important;
+  color: #53555a !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .qualPromBox {
+    display: none;
+  }
 }
 </style>

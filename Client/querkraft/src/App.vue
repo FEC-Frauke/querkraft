@@ -6,6 +6,8 @@
       <Subheader />
       <router-view />
     </div>
+    <newsletterteaser/>
+    <Footer/>
   </div>
 </template>
 
@@ -13,6 +15,9 @@
 import Header from "./components/Header/Header.vue";
 import Subheader from "@/components/SubHeader/SubHeader";
 import QualityPromise from "./components/QualityPromise/QualityPromise.vue";
+import Newsletterteaser from "./components/Newsletter/Teaser.vue";
+import Footer from "./components/Footer/Footer.vue"
+
 require("focus-visible");
 export default {
   name: "App",
@@ -20,6 +25,8 @@ export default {
     Header,
     QualityPromise,
     Subheader,
+    Newsletterteaser,
+    Footer
   },
 };
 </script>
@@ -44,22 +51,22 @@ html {
 a {
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   color: #53555a;
   text-decoration: none;
 }
 
 #nav a {
-  margin: 0px 30px;
-  padding-bottom: 10px;
+  margin: 0px 15px;
+  padding-bottom: 2px;
 }
 
 a.router-link-exact-active {
-  border-bottom: 2px solid #53555a;
+  border-bottom: 1px solid #53555a;
 }
 
 .main-container {
-  width: 90%;
+  width: 70%;
   margin: auto;
 }
 
@@ -98,5 +105,16 @@ a.router-link-exact-active {
 .vertical-line {
   border-left: 1px solid #b6bbc6;
   height: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-container {
+    width: 100%;
+  }
+
+  body,html {
+    height: 100%;
+  }
+
 }
 </style>

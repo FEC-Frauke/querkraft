@@ -1,5 +1,5 @@
 <template>
-  <div class="box" id="logo">
+  <div class="box">
     <div>
       <img id="logo" src="../../assets/querkraftlogo.svg" alt="logo" />
     </div>
@@ -14,7 +14,8 @@ export default {
 
 <style>
 #logo {
+  margin-left:10px;
   fill: #fe4438;
-  width: 200px;
+  width: 120px;
 }
 </style>

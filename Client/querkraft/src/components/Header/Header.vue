@@ -1,9 +1,11 @@
 <template>
+<div id="sticky">
   <header class="header">
     <logo />
     <navbar />
     <!-- <userarea /> -->
   </header>
+  </div>
 </template>
 
 <script>
@@ -36,10 +38,19 @@ export default {
 } */
 
 .header {
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: white ;
+  padding: 10px 10px;
+}
+
+#sticky {
+  position: sticky;
+  top:0;
+  z-index: 2;
 }
 
 #logo {
@@ -54,4 +65,14 @@ export default {
   justify-content: flex-end;
   padding-right: 2em;
 }
+
+@media only screen and (max-width: 768px) {
+.header {
+  height: 8vh;
+  padding: 0;
+}
+
+}
+
+
 </style>
